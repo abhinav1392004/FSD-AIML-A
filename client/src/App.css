@@ -1,0 +1,62 @@
+/* #root {
+  max-width: 100vw;
+  margin: 0px;
+  padding: 2rem;
+  text-align: center;
+} */
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.cart{
+  background-color: #888;
+  padding: 35px;
+  color: white;
+  border-radius: 15px;
+  border: 1.5px solid blue;
+  /* width: 150px;
+  height: 200px; */
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  color: white;
+  padding: 0px;
+  height: 60px;
+}
+
+.multipleCart{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.addToCart{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart img {
+  width: 100%;          /* makes image fit the card width */
+  height: 150px;        /* fix a consistent height */
+  object-fit: contain;  /* keep aspect ratio without cropping */
+  border-radius: 10px;  /* optional - smooth corners */
+  background-color: white; /* optional - helps with transparent images */
+}
