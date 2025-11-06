@@ -23,9 +23,9 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   display: flex;
-  
+  padding: 0px;
   max-width: 100vw;
   max-height: 100vh;
 }
@@ -35,7 +35,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+.addToCart button {
   border-radius: 1px;
   border: 1px solid blue;
   padding: 2px;
@@ -43,12 +43,24 @@ button {
   font-size: 1em;
   font-weight: 400;
   /* font-family: inherit; */
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
   border-radius: 10px;
   transition: border-color 0.25s;
   /* height: 26px;
   width: 26px; */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
@@ -70,3 +82,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

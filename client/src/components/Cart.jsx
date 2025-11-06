@@ -13,6 +13,10 @@ const Cart = ({items}) => {
         setCount(count => count+1);
     }
 
+    function handleCartButton(count){
+      alert(`${count}, Item Added to Cart`)
+    }
+
   return (
     <div className='cart'>
       <img src={items.image} alt="IMG" />
@@ -23,7 +27,9 @@ const Cart = ({items}) => {
         <p>{count}</p>
         <button onClick={handleClickInc}>+</button>
       </div>
-      <button>Add to Cart</button>
+      <div className='addToCart'>
+        <button onClick={() => handleCartButton(count)}>Add to Cart</button>
+      </div>
     </div>
   )
 }
